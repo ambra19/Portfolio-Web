@@ -4,21 +4,21 @@ import { Badge } from "./ui/badge";
 
 const projects = [
   {
-    title: "Project One",
-    description: "A full-stack web application built with React and Node.js",
-    tags: ["React", "Node.js", "MongoDB"],
+    title: "Mapy",
+    description: "Visual path-finding tool that computes optimal routes across randomly generated terrain maps using the A* algorithm, with support for walking and driving modes",
+    tags: ["Python", "Flask", "JavaScript", "HTML", "CSS"],
+    link: "https://mapy.onrender.com/",
+  },
+  {
+    title: "GreenCabin",
+    description: "Biodiversity level monitoring tool based on PDOK Kadastral data using Folium for interactive mapping",
+    tags: ["Python", "Flask", "PDOK Kadastral Data", "Folium", "JavaScript", "Tailwind CSS"],
     link: "#",
   },
   {
-    title: "Project Two",
-    description: "Mobile-first responsive website with modern UI/UX",
-    tags: ["React", "Tailwind CSS", "TypeScript"],
-    link: "#",
-  },
-  {
-    title: "Project Three",
-    description: "Real-time chat application using WebSocket",
-    tags: ["Socket.io", "Express", "React"],
+    title: "Work in progress ...",
+    description: "Stock price prediction using LSTM",
+    tags: ["Python", "TensorFlow"],
     link: "#",
   },
 ];
@@ -31,7 +31,8 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">{project.title}</h3>
               <p className="text-gray-600 mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag, tagIndex) => (
@@ -40,6 +41,7 @@ const Projects = () => {
                   </Badge>
                 ))}
               </div>
+              </a>
             </Card>
           ))}
         </div>

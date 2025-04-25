@@ -1,17 +1,17 @@
 
 const skills = [
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Node.js",
+  "Full-Stack",
+  "Machine Learning",
   "Python",
-  "Java",
+  "C++",
+  "C",
+  "Tensorflow",
+  "Scikit-learn",
+  "JavaScript",
   "Git",
-  "SQL",
-  "MongoDB",
-  "AWS",
   "Docker",
   "REST APIs",
+  "SQL",
 ];
 
 const Skills = () => {

@@ -12,10 +12,12 @@ const Navbar = () => {
             <a href="#projects" className="hover:text-blue-600 transition-colors">Projects</a>
             <a href="#skills" className="hover:text-blue-600 transition-colors">Skills</a>
             <a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a>
+            <a href="https://github.com/ambra19" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="sm" className="flex items-center gap-2">
               <Github className="h-4 w-4" />
               GitHub
             </Button>
+            </a>
           </div>
         </div>
       </div>
