@@ -13,7 +13,7 @@ const projects = [
     title: "GreenCabin",
     description: "Biodiversity level monitoring tool based on PDOK Kadastral data using Folium for interactive mapping",
     tags: ["Python", "Flask", "PDOK Kadastral Data", "Folium", "JavaScript", "Tailwind CSS"],
-    link: "#",
+    link: "https://greencabin.onrender.com",
   },
   {
     title: "Work in progress ...",
