@@ -4,6 +4,12 @@ import { Badge } from "./ui/badge";
 
 const projects = [
   {
+    title: "Check out my CV",
+    description: "",
+    tags: ["Venture Capital", "Entrepreneurship", "Web Development", "AI", "Robotics"],
+    link: "https://drive.google.com/file/d/1DO_lcMvCOC0MyfSempdIEIr3KHv4rHxK/view?usp=sharing",
+  },
+  {
     title: "Mapy",
     description: "Visual path-finding tool that computes optimal routes across randomly generated terrain maps using the A* algorithm, with support for walking and driving modes",
     tags: ["Python", "Flask", "JavaScript", "HTML", "CSS"],
@@ -14,13 +20,7 @@ const projects = [
     description: "Biodiversity level tool based on PDOK Kadastral data and U-Net ML model using Folium for interactive mapping",
     tags: ["Python", "Flask", "PDOK Kadastral Data", "Folium", "JavaScript", "Tailwind CSS"],
     link: "https://greencabin.onrender.com",
-  },
-  {
-    title: "Work in progress ...",
-    description: "Stock price prediction using LSTM",
-    tags: ["Python", "TensorFlow"],
-    link: "#",
-  },
+  }
 ];
 
 const Projects = () => {
